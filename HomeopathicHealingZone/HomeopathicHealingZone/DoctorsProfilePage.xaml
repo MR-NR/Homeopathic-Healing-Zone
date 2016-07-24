@@ -1,0 +1,85 @@
+﻿<Page
+    x:Class="HomeopathicHealingZone.DoctorsProfilePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HomeopathicHealingZone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Ellipse  Height="100" Margin="10" Width="100">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Assets/male-03.png"/>
+                </Ellipse.Fill>
+            </Ellipse>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Background="#FF1DB1F5" Orientation="Vertical" HorizontalAlignment="Stretch">
+            <TextBlock Text="DR. Clare Mitchell" FontSize="25" HorizontalAlignment="Center"/>
+            <TextBlock Text="Cardiac Surfery" FontSize="19" HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2">
+            <TextBlock Text="Speciality :" FontSize="25" HorizontalAlignment="Left" Foreground="#FF1DB1F5"/>
+            <TextBlock Text="Heart Specialist " FontSize="20" HorizontalAlignment="Center" Foreground="Black"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3">
+            <TextBlock Text="Degree :" FontSize="25" HorizontalAlignment="Left" Foreground="#FF1DB1F5"/>
+            <TextBlock Text="MBBS" FontSize="20" HorizontalAlignment="Center" Foreground="Black"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="4">
+            <TextBlock Text="Experience :" FontSize="25" HorizontalAlignment="Left" Foreground="#FF1DB1F5"/>
+            <TextBlock Text="5 Years" FontSize="20" HorizontalAlignment="Center" Foreground="Black"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="5">
+            <TextBlock Text="Email :" FontSize="25" HorizontalAlignment="Left" Foreground="#FF1DB1F5"/>
+            <TextBlock Text="M.Nisar@live.com " FontSize="20" HorizontalAlignment="Center" Foreground="Black"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="6">
+            <TextBlock Text="Contact Number :" FontSize="25" HorizontalAlignment="Left" Foreground="#FF1DB1F5"/>
+            <TextBlock Text="0345-7862345 " FontSize="20" HorizontalAlignment="Center" Foreground="Black"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="7">
+            <HyperlinkButton Name="AboutButton"
+                             Content="About ME" 
+                             FontSize="25" 
+                             HorizontalAlignment="Left" 
+                             Foreground="#FF1DB1F5" 
+                             Click="HyperlinkButton_Click"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="8">
+            <HyperlinkButton Name="NextButton"
+                             Content="Next" 
+                             FontSize="25" 
+                             HorizontalAlignment="Stretch" 
+                             Margin="10"  
+                             Foreground="#FF1DB1F5"
+                             Click="NextButton_Click"/>
+        </StackPanel>
+
+
+
+
+
+    </Grid>
+</Page>

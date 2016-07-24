@@ -20,16 +20,22 @@ namespace HomeopathicHealingZone
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Diagnose : Page
+    public sealed partial class DoctorsProfilePage : Page
     {
-        public Diagnose()
+        public DoctorsProfilePage()
         {
             this.InitializeComponent();
         }
 
         private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(MedicinePage));
+            Frame.Navigate(typeof(AboutDoctorPage));
+        }
+
+
+        private void NextButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SomeExtraInfoPage));
         }
     }
 }

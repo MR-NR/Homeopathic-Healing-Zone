@@ -13,8 +13,9 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <RelativePanel>
-            <Button Name="HamburgerButton"  
+        <RelativePanel Background="#FFC2C3C9">
+            <Button Name="HamburgerButton"
+                    Background="#FFC2C3C9"
                     RelativePanel.AlignLeftWithPanel="True"
                     FontFamily="Segoe MDL2 Assets" 
                     Content="&#xE700;"
@@ -22,6 +23,8 @@
                     Click="HamburgerButton_Click" VerticalAlignment="Top"/>
 
             <Button  Name="Backbutton"
+                     Background="#FFC2C3C9"
+                     Foreground="White"
                     RelativePanel.RightOf="HamburgerButton"
                     FontFamily="Segoe MDL2 Assets"
                     Content="&#xE0C4;"
@@ -33,7 +36,8 @@
                      RelativePanel.RightOf="Backbutton"
                      FontSize="28"
                      FontWeight="Bold"
-                       Margin="40,5,0,0"/>
+                       Margin="20,5,0,0"
+                       Foreground="White"/>
 
             <!--<Button Name="serchbutton"
                     RelativePanel.AlignRightWithPanel="True"

@@ -92,6 +92,9 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutDoctorPage.xaml.cs">
+      <DependentUpon>AboutDoctorPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -101,11 +104,20 @@
     <Compile Include="Diagnose.xaml.cs">
       <DependentUpon>Diagnose.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DoctorsPage.xaml.cs">
+      <DependentUpon>DoctorsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorsProfilePage.xaml.cs">
+      <DependentUpon>DoctorsProfilePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MedicinePage.xaml.cs">
+      <DependentUpon>MedicinePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Navigation.xaml.cs">
       <DependentUpon>Navigation.xaml</DependentUpon>
@@ -114,6 +126,12 @@
       <DependentUpon>Profile.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignUppage.xaml.cs">
+      <DependentUpon>SignUppage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SomeExtraInfoPage.xaml.cs">
+      <DependentUpon>SomeExtraInfoPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -123,6 +141,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\HHZ.png" />
+    <Content Include="Assets\male-03.png" />
     <Content Include="Assets\or.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -138,11 +157,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="AboutDoctorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Appointment.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Diagnose.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DoctorsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DoctorsProfilePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -154,11 +185,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="MedicinePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Navigation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Profile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SignUppage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SomeExtraInfoPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Devices.Geolocation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,6 +26,19 @@ namespace HomeopathicHealingZone
         public Appointment()
         {
             this.InitializeComponent();
+            Map.Center =
+              new Geopoint(new BasicGeoposition()
+              {
+                  Latitude = 31.4755386,
+                  Longitude = 74.3399867
+              });
+            Map.ZoomLevel = 12;
+            Map.LandmarksVisible = true;
+        }
+
+        private void NextButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(DoctorsPage));
         }
     }
 }

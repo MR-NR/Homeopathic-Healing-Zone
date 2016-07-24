@@ -29,5 +29,15 @@ namespace HomeopathicHealingZone
             this.InitializeComponent();
             
         }
+
+        private void SingUpButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SignUppage));
+        }
+
+        private void LogInButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Navigation));
+        }
     }
 }

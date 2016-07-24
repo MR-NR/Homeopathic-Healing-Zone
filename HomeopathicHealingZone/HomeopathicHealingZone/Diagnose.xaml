@@ -8,6 +8,29 @@
     mc:Ignorable="d">
 
     <Grid Background="#FF1DB1F5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ListView x:Name="listView"
+                  Height="459" 
+                  Grid.Row="0">
+        </ListView>
+
+        <Slider x:Name="slider" 
+                Foreground="#FFFF0006" 
+                Grid.Row="1"/>
+        
+        <HyperlinkButton 
+            Grid.Row="2" 
+            Content="Suggest Medicine" 
+            FontSize="24"
+            Foreground="White" 
+            HorizontalAlignment="Center"
+            Click="HyperlinkButton_Click"
+            Margin="5"/>
 
     </Grid>
 </Page>

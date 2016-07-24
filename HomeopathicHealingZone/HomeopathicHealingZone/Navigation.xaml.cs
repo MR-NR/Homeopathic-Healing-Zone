@@ -42,7 +42,7 @@ namespace HomeopathicHealingZone
             if (MyFrame.CanGoBack)
             {
                 MyFrame.GoBack();
-                HomeBox.IsSelected = true;
+                //HomeBox.IsSelected = true;
             }
         }
 
@@ -72,7 +72,7 @@ namespace HomeopathicHealingZone
             {
                 Backbutton.Visibility = Visibility.Visible;
                 MyFrame.Navigate(typeof(Profile));
-                TittleTextBlock.Text = "Diagnose";
+                TittleTextBlock.Text = "Profile";
             }
         }
     }

@@ -7,7 +7,89 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="#FF1DB1F5">
 
+        <ScrollViewer>
+            <StackPanel Orientation="Vertical">
+                <TextBox x:Name="FatherNameTextBox"
+                 FontSize="22" 
+                 Margin="10,20,20,0" 
+                 Height="45" 
+                 PlaceholderText="Father Name"
+                 HorizontalAlignment="Stretch" 
+                 Width="320"/>
+                <TextBox x:Name="MotherNameTextBox"
+                 FontSize="22" 
+                 Margin="10,20,20,0" 
+                 Height="45" 
+                 PlaceholderText="Mother Name"
+                 HorizontalAlignment="Stretch" 
+                 Width="320"/>
+                <TextBox x:Name="CNICTextBox"
+                 FontSize="22" 
+                 Margin="10,20,20,0" 
+                 Height="45" 
+                 PlaceholderText="CNIC Number"
+                 HorizontalAlignment="Stretch" 
+                 Width="320"/>
+                <TextBox x:Name="AddressTextBox"
+                 FontSize="22" 
+                 Margin="10,20,20,0" 
+                 Height="45" 
+                 PlaceholderText="Address"
+                 HorizontalAlignment="Stretch" 
+                 Width="320"/>
+                <TextBox x:Name="OccupationTextBox"
+                 FontSize="22" 
+                 Margin="10,20,20,0" 
+                 Height="45" 
+                 PlaceholderText="Occupation"
+                 HorizontalAlignment="Stretch" 
+                 Width="320"/>
+                <TextBox x:Name="ReligionTextBox"
+                 FontSize="22" 
+                 Margin="10,20,20,0" 
+                 Height="45" 
+                 PlaceholderText="Religion"
+                 HorizontalAlignment="Stretch" 
+                 Width="320"/>
+                <TextBox x:Name="ContactTextBox"
+                 FontSize="22" 
+                 Margin="10,20,20,0" 
+                 Height="45" 
+                 PlaceholderText="Contact Number"
+                 HorizontalAlignment="Stretch" 
+                 Width="320"/>
+                <TextBox x:Name="CastTextBox"
+                 FontSize="22" 
+                 Margin="10,20,20,0" 
+                 Height="45" 
+                 PlaceholderText="Cast"
+                 HorizontalAlignment="Stretch" 
+                 Width="320"/>
+                <CalendarDatePicker 
+                    Margin="0,20,10,0" 
+                    HorizontalAlignment="Center"
+                    Width="320"
+                    PlaceholderText="choose a date" >
+                </CalendarDatePicker>
+                <TimePicker 
+                    ClockIdentifier="12HourClock"
+                    Margin="0,20,10,0"
+                    HorizontalAlignment="Center"
+                    Width="320"/>
+                <HyperlinkButton
+            Background="#FFEF9C00"
+            Content="Done" 
+            FontSize="24"
+            Foreground="White" 
+            HorizontalAlignment="Center"
+            Margin="0,20,10,20" 
+            Width="320"
+            Click="HyperlinkButton_Click"/>
+
+            </StackPanel>
+            
+        </ScrollViewer>
     </Grid>
 </Page>

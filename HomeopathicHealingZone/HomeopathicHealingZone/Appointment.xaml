@@ -14,13 +14,14 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <ComboBox x:Name="SelectCityBox" 
+        <RelativePanel HorizontalAlignment="Stretch" Grid.Row="0">
+            <ComboBox x:Name="SelectCityBox" 
                   PlaceholderText="Select City"
-                  FontSize="30"
-                  Width="360" 
-                  Height="60"
-                  Grid.Row="0"/>
-
+                  FontSize="30" 
+                  Height="60"  
+                  HorizontalAlignment="Stretch"  
+                  />
+        </RelativePanel>
         <Maps:MapControl Name="Map"
                          HorizontalAlignment="Stretch" 
                          Margin="0,0,0,0" 

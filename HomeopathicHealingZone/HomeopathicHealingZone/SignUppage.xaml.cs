@@ -26,5 +26,15 @@ namespace HomeopathicHealingZone
         {
             this.InitializeComponent();
         }
+
+        private void HyperlinkButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Navigation));
+        }
+
+        private void GanderButton_Click(object sender, RoutedEventArgs e)
+        {
+            ToggleButtonResultTextBlock.Text = GanderButton.IsChecked.ToString();
+        }
     }
 }

@@ -7,7 +7,105 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="#FF1DB1F5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="NameTextBox"
+                 FontSize="22" 
+                 Margin="0,20,20,0" 
+                 Height="45" 
+                 PlaceholderText="First Name" 
+                 AutomationProperties.IsRequiredForForm="True" 
+                 Grid.Row="0" 
+                 HorizontalAlignment="Stretch" 
+                 Width="320"/>
+        <TextBox x:Name="SurNameTextBox"
+                 FontSize="22" 
+                 Margin="0,20,20,0" 
+                 Height="45" 
+                 PlaceholderText="Surname" 
+                 AutomationProperties.IsRequiredForForm="True" 
+                 Grid.Row="1" 
+                 HorizontalAlignment="Stretch" 
+                 Width="320"/>
+        <TextBox x:Name="UserNameTextBox"
+                 FontSize="22"
+                 Margin="0,20,20,0" 
+                 Height="45" 
+                 PlaceholderText="Username"
+                 AutomationProperties.IsRequiredForForm="True"
+                 Grid.Row="2" 
+                 HorizontalAlignment="Stretch" 
+                 Width="320"/>
+        <TextBox x:Name="EmailTextBox" 
+                 FontSize="22" 
+                 Margin="0,20,20,0"
+                 Height="45"
+                 PlaceholderText="Email"
+                 AutomationProperties.IsRequiredForForm="True"
+                 Grid.Row="3" 
+                 HorizontalAlignment="Stretch"
+                 Width="320"/>
+        <TextBox x:Name="PaswordTextBox" 
+                 FontSize="22"
+                 Margin="0,20,20,0" 
+                 Height="45" 
+                 PlaceholderText="Password"
+                 AutomationProperties.IsRequiredForForm="True"
+                 Grid.Row="4" 
+                 HorizontalAlignment="Stretch" 
+                 Width="320"/>
+        <TextBox x:Name="RePaswordTextBox"  
+                 FontSize="22" 
+                 Margin="0,20,20,0" 
+                 Height="45" 
+                 PlaceholderText="Re Enter Password" 
+                 AutomationProperties.IsRequiredForForm="True" 
+                 Grid.Row="5"
+                 HorizontalAlignment="Stretch" 
+                 Width="320"/>
+        <DatePicker  Grid.Row="6"
+                    Margin="15,20,28,0"  
+                    HorizontalAlignment="Stretch"
+                    VerticalAlignment="Stretch" 
+                     ToolTipService.ToolTip="Date Of Birth">
+        </DatePicker>
+     <StackPanel Grid.Row="7" Orientation="Horizontal" HorizontalAlignment="Center">
+            <ToggleButton 
+                      Name="GanderButton" 
+                      Height="40" 
+                      Width="100" 
+                      Content="Male" 
+                      FontSize="20" 
+                      Foreground="White"
+                      Click="GanderButton_Click" IsChecked="True" ToolTipService.ToolTip="Select Gender"/>
+            <TextBlock Name="ToggleButtonResultTextBlock" 
+                       TextAlignment="Left"
+                       FontSize="30"
+                       Margin="20"/>
+
+        </StackPanel>
+        
+        <HyperlinkButton
+            Background="#FFEF9C00"
+            Grid.Row="8" 
+            Content="Sing Up" 
+            FontSize="24"
+            Foreground="White" 
+            HorizontalAlignment="Stretch"
+            Click="HyperlinkButton_Click"
+            Margin="0,20,20,10" 
+            Width="320"/>
 
     </Grid>
 </Page>

@@ -75,10 +75,9 @@
                  HorizontalAlignment="Stretch" 
                  Width="320"/>
         <DatePicker  Grid.Row="6"
-                    Margin="15,20,28,0"  
-                    HorizontalAlignment="Stretch"
-                    VerticalAlignment="Stretch" 
-                     ToolTipService.ToolTip="Date Of Birth">
+                    Margin="45,20,65,0"  
+                    HorizontalAlignment="Stretch" 
+                    ToolTipService.ToolTip="Date Of Birth">
         </DatePicker>
      <StackPanel Grid.Row="7" Orientation="Horizontal" HorizontalAlignment="Center">
             <ToggleButton 

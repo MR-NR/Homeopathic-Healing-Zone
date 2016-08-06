@@ -44,11 +44,13 @@
                           FontSize="18" 
                           Margin="0,0,110,0"  
                           HorizontalAlignment="Center" />
-                <TextBlock x:Name="forgotTextBlock"
-                           Text="Forgot Password"
+                <HyperlinkButton x:Name="forgotHyperLinkButton"
+                           Content="Forgot Password"
                            FontSize="18"
+                           Foreground="Black"
                            Margin="10,0,125,0"
-                           HorizontalAlignment="Center" />
+                           HorizontalAlignment="Center"
+                           Click="forgotHyperLinkButton_Click"/>
                 <Button x:Name="LogInButton"
                         Content="Log in"
                         FontSize="18"

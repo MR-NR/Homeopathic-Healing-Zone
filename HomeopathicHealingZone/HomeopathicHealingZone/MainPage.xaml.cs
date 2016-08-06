@@ -39,5 +39,10 @@ namespace HomeopathicHealingZone
         {
             Frame.Navigate(typeof(Navigation));
         }
+
+        private void forgotHyperLinkButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

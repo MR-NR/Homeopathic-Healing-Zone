@@ -7,14 +7,18 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid BorderBrush="#FF1DB1F5" BorderThickness="3" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.RowDefinitions>
+    <ScrollViewer>
+        <Grid BorderBrush="Red" BorderThickness="1" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <Grid.RowDefinitions>
 
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <TextBlock Text="About Me :"  FontWeight="SemiBold" FontSize="30" Foreground="#FF1DB1F5" TextAlignment="Left"/>
-        <TextBlock Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus, mi nec fermentum congue, turpis nibh porttitor ex, sed commodo neque eros non libero. Donec mauris felis, malesuada nec consectetur et, pharetra in ante. Praesent nec hendrerit purus. Ut vel nunc id nisl volutpat porta. Cras in convallis ipsum. Integer id sollicitudin ex. Ut sed iaculis nisl. " FontStyle="Oblique" Grid.Row="1" TextWrapping="Wrap" FontSize="20" Margin="10" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="About Me :"  FontWeight="SemiBold" FontSize="20" Foreground="#FF1DB1F5" TextAlignment="Left"/>
+            <TextBlock Margin="5" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus, mi nec fermentum congue, turpis nibh porttitor ex, sed commodo neque eros non libero. Donec mauris felis, malesuada nec consectetur et, pharetra in ante. Praesent nec hendrerit purus. Ut vel nunc id nisl volutpat porta. Cras in convallis ipsum. Integer id sollicitudin ex. Ut sed iaculis nisl. " FontStyle="Oblique" Grid.Row="1" TextWrapping="Wrap" FontSize="17"/>
 
-    </Grid>
+        </Grid>
+    </ScrollViewer>
+
+
 </Page>

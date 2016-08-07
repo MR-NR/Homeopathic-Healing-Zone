@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
+  
     <Grid Background="#FF1DB1F5">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -72,6 +72,7 @@
                        Margin="45,10,0,0"/>
 
         </StackPanel>
+
         <HyperlinkButton
             Background="#FFEF9C00"
             Grid.Row="8" 

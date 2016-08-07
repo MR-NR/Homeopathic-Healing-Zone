@@ -42,7 +42,7 @@ namespace HomeopathicHealingZone
             if (MyFrame.CanGoBack)
             {
                 MyFrame.GoBack();
-                //HomeBox.IsSelected = true;
+                HomeBox.IsSelected = true;
             }
         }
 

@@ -18,7 +18,7 @@
             <ComboBox x:Name="SelectCityBox" 
                   PlaceholderText="Select City"
                   FontSize="25" 
-                  Height="40"  
+                  Height="40"
                   Width="250"
                   HorizontalAlignment="Center" >
 
@@ -37,5 +37,5 @@
                          Foreground="White"
                          Click="NextButton_Click"/>
     </Grid>
-
 </Page>
+

@@ -8,6 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="#FF1DB1F5">
+
         <ScrollViewer>
             <StackPanel Orientation="Vertical">
                 <TextBox x:Name="FatherNameTextBox"
@@ -34,7 +35,7 @@
                 <TextBox x:Name="CastTextBox"
                  Style="{StaticResource Textbox}"
                  PlaceholderText="Cast"/>
-
+                
                 <HyperlinkButton
             Background="#FFEF9C00"
             Content="Done" 
@@ -48,6 +49,7 @@
             </StackPanel>
 
         </ScrollViewer>
-
     </Grid>
+
+
 </Page>

@@ -32,9 +32,6 @@ namespace HomeopathicHealingZone
             Frame.Navigate(typeof(Navigation));
         }
 
-        private void GanderButton_Click(object sender, RoutedEventArgs e)
-        {
-            ToggleButtonResultTextBlock.Text = GanderButton.IsChecked.ToString();
-        }
+       
     }
 }

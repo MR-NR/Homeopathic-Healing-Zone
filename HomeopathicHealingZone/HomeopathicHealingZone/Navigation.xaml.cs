@@ -74,6 +74,10 @@ namespace HomeopathicHealingZone
                 MyFrame.Navigate(typeof(Profile));
                 TittleTextBlock.Text = "Profile";
             }
+            if (LogoutBox.IsSelected)
+            {
+                
+            }
         }
     }
 }

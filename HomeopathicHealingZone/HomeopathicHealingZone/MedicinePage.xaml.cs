@@ -34,7 +34,9 @@ namespace HomeopathicHealingZone
 
         private void Appointment_Click(object sender, RoutedEventArgs e)
         {
+
             Frame.Navigate(typeof(Appointment));
+
 
         }
     }

@@ -56,23 +56,22 @@
                     ToolTipService.ToolTip="Date Of Birth">
         </DatePicker>
         <StackPanel Grid.Row="7" Orientation="Horizontal">
-            <ToggleButton 
+            <ToggleSwitch 
                       Name="GanderButton" 
                       Height="30" 
                       Width="100" 
-                      Content="Male" 
                       FontSize="13" 
                       Foreground="White"
                       Margin="13,10,0,0"
-                      Click="GanderButton_Click" IsChecked="True" 
-                      ToolTipService.ToolTip="Select Gender"/>
-            <TextBlock Name="ToggleButtonResultTextBlock" 
-                       TextAlignment="Left"
-                       FontSize="20"
-                       Margin="45,10,0,0"/>
-
+                      ToolTipService.ToolTip="Select Gender">
+                <ToggleSwitch.OnContent>
+                    <TextBlock Text="I'm  Male" FontSize="18"/>
+                </ToggleSwitch.OnContent>
+                <ToggleSwitch.OffContent>
+                    <TextBlock  Text="I'm  Female" FontSize="18"/>
+                </ToggleSwitch.OffContent>
+            </ToggleSwitch>
         </StackPanel>
-
         <HyperlinkButton
             Background="#FFEF9C00"
             Grid.Row="8" 

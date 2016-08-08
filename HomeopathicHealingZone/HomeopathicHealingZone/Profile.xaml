@@ -10,30 +10,71 @@
     <Grid Background="#FF1DB1F5">
         <ScrollViewer>
             <StackPanel Orientation="Vertical">
-                <TextBox x:Name="FatherNameTextBox"
+                <TextBox x:Name="NameTextBox"
                  Style="{StaticResource Textbox}"
-                 PlaceholderText="Father Name"/>
-                <TextBox x:Name="MotherNameTextBox"
+                 Height="37"
+                  FontSize="19"       
+                 PlaceholderText="Name"/>
+                <TextBox x:Name="SurNameTextBox"
                  Style="{StaticResource Textbox}"
-                 PlaceholderText="Mother Name"/>
-                <TextBox x:Name="CNICTextBox"
-                 Style="{StaticResource Textbox}" 
-                 PlaceholderText="CNIC Number" />
-                <TextBox x:Name="AddressTextBox"
-                 Style="{StaticResource Textbox}" 
-                 PlaceholderText="Address"/>
-                <TextBox x:Name="OccupationTextBox"
-                 Style="{StaticResource Textbox}"
-                 PlaceholderText="Occupation"/>
-                <TextBox x:Name="ReligionTextBox"
-                 Style="{StaticResource Textbox}" 
-                 PlaceholderText="Religion"/>
+                 FontSize="19"
+                 Height="37"
+                 PlaceholderText="Sur Name"/>
                 <TextBox x:Name="ContactTextBox"
                  Style="{StaticResource Textbox}"
+                 Height="37"
+                 FontSize="19"
                  PlaceholderText="Contact Number"/>
+                <TextBox x:Name="AddressTextBox"
+                 Style="{StaticResource Textbox}"
+                 Height="37"
+                 FontSize="19"      
+                 PlaceholderText="Address"/>
                 <TextBox x:Name="CastTextBox"
                  Style="{StaticResource Textbox}"
+                 Height="37"
+                 FontSize="19"
                  PlaceholderText="Cast"/>
+                <TextBox x:Name="CNICTextBox"
+                 Style="{StaticResource Textbox}" 
+                 FontSize="19"
+                 Height="37"
+                 PlaceholderText="CNIC Number" />
+                <TextBox x:Name="MotherNameTextBox"
+                 Style="{StaticResource Textbox}"
+                 FontSize="19"
+                 Height="37"
+                 PlaceholderText="Mother Name"/>
+                <TextBox x:Name="ReligionTextBox"
+                 Style="{StaticResource Textbox}" 
+                 FontSize="19"
+                 Height="37"
+                 PlaceholderText="Religion"/>
+                <TextBox x:Name="OccupationTextBox"
+                 Style="{StaticResource Textbox}"
+                 FontSize="19"
+                 Height="37"
+                 PlaceholderText="Occupation"/>
+                <ToggleSwitch 
+                      Name="GanderButton" 
+                      Height="30" 
+                      Width="100" 
+                      FontSize="13" 
+                      Foreground="White"
+                      Margin="13,10,0,0"
+                      ToolTipService.ToolTip="Minitel status  ">
+                    <ToggleSwitch.OnContent>
+                        <TextBlock Text="I'm Married"/>
+                    </ToggleSwitch.OnContent>
+                    <ToggleSwitch.OffContent>
+                        <TextBlock  Text="I'm Unmarried"/>
+                    </ToggleSwitch.OffContent>
+                </ToggleSwitch>
+                <TextBox x:Name="HusbandTextBox"
+                 Style="{StaticResource Textbox}"
+                 FontSize="19"
+                 Height="37"
+                 PlaceholderText="Husband Name"/>
 
                 <HyperlinkButton
             Background="#FFEF9C00"
@@ -46,6 +87,7 @@
             Click="HyperlinkButton_Click"/>
 
             </StackPanel>
+
 
         </ScrollViewer>
 

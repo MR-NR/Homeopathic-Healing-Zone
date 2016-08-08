@@ -17,7 +17,7 @@
         <RelativePanel HorizontalAlignment="Left" Grid.Row="0">
             <ComboBox x:Name="SelectCityBox" 
                   PlaceholderText="Select City"
-                  FontSize="25" 
+                  FontSize="20" 
                   Height="40"  
                   Width="250"
                   HorizontalAlignment="Center" >
